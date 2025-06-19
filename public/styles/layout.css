@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 8.4px 0;
+  margin-left: 20px;
+  display: inline-block;
+  font: 36px Impact, fantasy;
+}
+
+#navbar {
+  height: 60px;
+  background-color: #d9d9d9;
+}
+
+#navbar-options {
+  padding: 18.4px 0;
+  float: right;
+  font: 20px "Trebuchet MS", sans-serif;
+  margin-right: 20px;
+}
+
+#navbar-options a {
+  margin-left: 40px;
+  color: #000;
+  text-decoration: none;
+}
