@@ -60,6 +60,11 @@ app.post("/editing", (req, res) => {
   res.status(200).send(`Successfully recieved: "${req.body}"`);
 })
 
+app.delete("/editing", (req, res) => {
+  posts.splice(postIndex, 1);
+  res.status(204).send();
+})
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
