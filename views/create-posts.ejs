@@ -1,3 +1,8 @@
 <%- include("partials/header.ejs") %>
-
+<form method="POST">
+  <input name="title" placeholder="Post title">
+  <input name="author" placeholder="Author">
+  <textarea name="content" placeholder="Post content" rows="10"></textarea>
+  <input class="btn" type="submit" value="Submit">
+</form>
 <%- include("partials/footer.ejs") %>

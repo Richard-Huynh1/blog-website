@@ -69,3 +69,23 @@ ul > li > ul > li {
     width: calc(100% - 20px);
   }
 } 
+
+input {
+  font: 14px "Trebuchet MS", sans-serif;
+  width: 50%;
+}
+
+textarea {
+  font: 14px "Trebuchet MS", sans-serif;
+  width: 50%;
+  resize: vertical;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
