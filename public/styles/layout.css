@@ -1,5 +1,14 @@
 body {
+  min-height: 100vh;
   margin: 0;
+  position: relative;
+}
+
+body::after {
+  margin-top: 10px;
+  content: '';
+  display: block;
+  height: 50px;
 }
 
 footer {
