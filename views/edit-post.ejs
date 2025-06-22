@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<form class="inline" action="/editing" method="GET">
+  <% if (locals.title) { %>
+    <input name="title" value="<%= title %>" readonly>
+  <% } else { %>
+    <input name="title" placeholder="Title of the post to edit">
+  <% } %>
+  <input class="btn" type="submit" value="Submit">
+</form>
+<div class="container">
+  <% if (locals.content) { %>
+    <textarea placeholder="Type the new text here" rows="10"><%= content %></textarea>
+  <% } else { %>
+    <textarea placeholder="Type the new text here" rows="10" readonly></textarea>
+  <% } %>
+    <span style="width:50%;margin-top:10px">
+    <button class="btn" style="float:left" onclick="updatePost()">Save</button>
+    <button class="btn" style="float:right">Delete Post</button>
+  </span>
+</div>
+<% if (locals.message) { %>
+  <h2><%= message %></h2>
+<% } %>
+<script src="src/edit-post.js"></script>
+<%- include("partials/footer.ejs") %>

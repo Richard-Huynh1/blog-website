@@ -82,10 +82,17 @@ textarea {
 }
 
 form {
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
