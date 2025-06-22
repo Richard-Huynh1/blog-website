@@ -6,13 +6,13 @@ footer {
   position: absolute;
   height: 50px;
   background-color: #d9d9d9;
-  text-align: center;
   bottom: 0;
   width: 100%;
 }
 
 footer > p {
   font: 16px "Trebuchet MS", sans-serif;
+  text-align: center;
 }
 
 h1 {

@@ -1,3 +1,44 @@
 <%- include("partials/header.ejs") %>
+<h2>Latest Posts</h2>
+<% if (locals.posts) { %>
+  <% if (posts.length === 0) { %>
+    <p id="no-posts">There are no posts available for viewing</p>
+  <% } else if (posts.length === 1) { %>
+    <div class="row">
+      <span>
+        <h3><a href="/view-post?post=0"><%= posts[0].title %></a></h3>
+        <p><%= posts[0].date %></p>
+      </span>
+    </div>
+  <% } else { %>
+      <div class="row">
+        <span>
+          <h3><a href="view-post?post=0"><%= posts[0].title %></a></h3>
+          <p><%= posts[0].date %></p>
+        </span>
 
+        <span>
+          <h3><a href="view-post?post=1"><%= posts[1].title %></a></h3>
+          <p><%= posts[1].date %></p>
+        </span>
+      </div>
+  <% } %>
+<% } %>
+<div style="text-align: center">
+  <button class="btn">View all posts</button>
+</div>
+<div id="posts">
+  <% if (locals.posts) { %>
+    <ul>
+      <% posts.forEach((post, index) => { %>
+        <li><a href="view-post?post=<%= index %>"><%= post.title %></a>
+          <ul>
+            <li><%= post.date %></li>
+        </ul>
+      </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</div>
+<script src="src/index.js"></script>
 <%- include("partials/footer.ejs") %>
