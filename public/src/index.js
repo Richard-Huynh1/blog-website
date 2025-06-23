@@ -9,4 +9,4 @@ btn.addEventListener("click", function() {
     posts.style.display = "none";
     this.innerHTML = "View All Posts";
   }
-})
+});

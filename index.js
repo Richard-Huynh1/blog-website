@@ -5,7 +5,6 @@ const app = express();
 const PORT = 3000;
 var postIndex;
 var posts = [];
-var message;
 
 app.use(bodyParser.text({ type: "text/plain" }));
 app.use(bodyParser.urlencoded({ extender: true }));

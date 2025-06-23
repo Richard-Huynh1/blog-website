@@ -13,13 +13,13 @@
   <% } else { %>
       <div class="row">
         <span>
-          <h3><a href="view-post?post=0"><%= posts[0].title %></a></h3>
-          <p><%= posts[0].date %></p>
+          <h3><a href="view-post?post=<%= posts.length-1 %>"><%= posts[posts.length-1].title %></a></h3>
+          <p><%= posts[posts.length-1].date %></p>
         </span>
 
         <span>
-          <h3><a href="view-post?post=1"><%= posts[1].title %></a></h3>
-          <p><%= posts[1].date %></p>
+          <h3><a href="view-post?post=<%= posts.length-2 %>"><%= posts[posts.length-2].title %></a></h3>
+          <p><%= posts[posts.length-2].date %></p>
         </span>
       </div>
   <% } %>

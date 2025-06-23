@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-<form class="inline" action="/editing" method="GET">
+<form action="/editing" method="GET">
   <% if (locals.title) { %>
     <input name="title" value="<%= title %>" readonly>
   <% } else { %>
